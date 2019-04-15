@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>zadanie1</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <div id="content"></div>
+
+
+    <script>
+
+        var link1 = document.createElement("a"),
+            link2 = document.createElement("a"),
+            link3 = document.createElement("a"),
+            menu = document.createElement("div");
+
+        link1.innerHTML = "czerwony"; link1.style.border = "30px";
+        link2.innerHTML = "czarny"; link2.style.padding = "30px";
+        link3.innerHTML = "brązowy";
+        
+        menu.appendChild(link1);
+        menu.appendChild(link2);
+        menu.appendChild(link3);
+
+        menu.style.border = "25px solid blue";
+        document.body.appendChild(menu);
+
+        link1.addEventListener("click", function(){menu.style.border = "25px solid red";});
+        link2.addEventListener("click", function(){menu.style.border = "25px solid black";});
+        link3.addEventListener("click", function(){menu.style.border = "25px solid brown";});
+    </script>
+</body>
+</html>
+
