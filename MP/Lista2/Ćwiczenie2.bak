@@ -1,0 +1,7 @@
+#lang racket
+(define ((compose f g) x)
+  (f (g x)))
+(define (square x)
+  (* x x))
+(define (inc x)
+  (+ x 1))
