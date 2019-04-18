@@ -1,2 +1,2 @@
 # UWr
-Repository for my studies code
+Repository for my University code/projects
